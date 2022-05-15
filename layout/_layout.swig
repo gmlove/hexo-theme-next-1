@@ -7,6 +7,8 @@
   <title>{% block title %}{% endblock %}</title>
   {{ partial('_third-party/analytics/index.swig', {}, {cache: theme.cache.enable}) }}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
+  <link rel="stylesheet" href="/attaches/assets/next/share.min.css">
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">

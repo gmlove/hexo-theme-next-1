@@ -45,3 +45,6 @@
   {%- set internal_script = next_vendors(internal) %}
   <script src="{{ theme.vendors[name] or internal_script }}"></script>
 {%- endfor %}
+
+  <script src="/attaches/assets/next/jquery.share.min.js"></script>
+
