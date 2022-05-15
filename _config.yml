@@ -128,7 +128,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -177,7 +177,7 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/gmlove || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  E-Mail: mailto:gmliao@thoughtworks.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -254,7 +254,7 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
@@ -275,13 +275,13 @@ reward:
 follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
-  #WeChat: /images/wechat_channel.jpg || fab fa-weixin
+  WeChat: /images/wechat.png || fab fa-weixin
   #RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
-  enable: false
+  enable: true
   title: # Custom header, leave empty to use the default one
   display_in_home: false
   params:
@@ -371,7 +371,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
@@ -379,7 +379,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -515,16 +515,16 @@ pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
-fancybox: false
+fancybox: true
 
 # A JavaScript library for zooming images like Medium.
 # Do not enable both `fancybox` and `mediumzoom`.
 # For more information: https://github.com/francoischalifour/medium-zoom
-mediumzoom: false
+mediumzoom: true
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://github.com/ApoorvSaxena/lozad.js
-lazyload: false
+lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -565,7 +565,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active:
+  active: changyan
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -601,9 +601,9 @@ disqusjs:
 
 # Changyan
 changyan:
-  enable: false
-  appid:
-  appkey:
+  enable: true
+  appid: cyw4FQC5L
+  appkey: 94b256db4c8ed0ff709cb2f23421db25
   #post_meta_order: 0
 
 # Valine
@@ -691,12 +691,11 @@ leancloud_visitors:
   enable: true
   app_id: 4BFdbWUTO8tJBOkCpS2nj4df-gzGzoHsz
   app_key: 9jxpPRQJh9dxgB6Ndb1HYuKO
-  # Required for apps from CN region
-  server_url: # <your server url>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
   security: false
+  betterPerformance: true
 
 # Another tool to show number of visitors to each article.
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
@@ -810,7 +809,7 @@ pdf:
 
 # Mermaid tag
 mermaid:
-  enable: false
+  enable: true
   # Available themes: default | dark | forest | neutral
   theme: forest
 
@@ -973,8 +972,8 @@ vendors:
   # pace: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js
   # pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   # pace_css: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css
-  pace:
-  pace_css:
+  pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
+  pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
 
   # Internal version: 1.0.0
   # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
