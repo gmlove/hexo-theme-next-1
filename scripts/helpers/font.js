@@ -25,5 +25,6 @@ hexo.extend.helper.register('next_font', () => {
   fontFamilies = fontFamilies.join('|');
 
   // Merge extra parameters to the final processed font string
-  return fontFamilies ? `<link rel="stylesheet" href="${fontHost}/css?family=${fontFamilies.concat(fontDisplay, fontSubset)}">` : '';
+  return `<link rel="stylesheet" href="/attaches/assets/fonts/fonts.css">`;
+  //return fontFamilies ? `<link rel="stylesheet" href="${fontHost}/css?family=${fontFamilies.concat(fontDisplay, fontSubset)}">` : '';
 });
