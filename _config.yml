@@ -71,8 +71,8 @@ footer:
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
-    enable: false
-    icp:
+    enable: true
+    icp: 蜀ICP备2022013263号
     # The digit in the num of gongan beian.
     gongan_id:
     # The full num of gongan beian.
@@ -97,10 +97,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -138,7 +138,7 @@ menu_settings:
 
 sidebar:
   # Sidebar Position.
-  position: right
+  position: left
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -201,6 +201,18 @@ links_settings:
   layout: block
 
 links:
+  Thoughtworks洞见: https://insights.thoughtworks.cn
+  Thoughtworks技术雷达: https://www.thoughtworks.com/radar
+  少个分号（DDD思考者）: https://shaogefenhao.com
+  马大伟（被动收入实践者）: https://www.bmpi.dev
+  麻广广（企业架构设计）: https://maguangguang.xyz/
+  爱码叔iCodeBook（软件架构）: http://www.icodebook.com/
+  刘冉思辨悟（软件测试与质量沉思）: https://liuranthinking.com/
+  BY林子（关注质量，不止测试）: https://www.bylinzi.com
+  于晓南（QualityFocus）: https://qualityfocus.club/yxn
+  聂子云（数字化转型咨询）: http://www.niezitalk.com/
+  张凯峰（打造影响力）: http://www.kaifengzhang.com/
+
   #Title: http://yoursite.com
 
 # Table of Contents in the Sidebar
@@ -408,7 +420,7 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
@@ -440,11 +452,13 @@ font:
   posts:
     external: true
     family:
+    size: 0.4
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
     family:
+    size: 0.9em
 
 
 # ---------------------------------------------------------------
