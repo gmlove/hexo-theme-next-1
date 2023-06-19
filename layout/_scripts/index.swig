@@ -8,7 +8,7 @@
 {%- set scheme_script = 'schemes/' + theme.scheme | lower + '.swig' %}
 {% include scheme_script %}
 
-{{- next_js('next-boot.js?35') }}
+{{- next_js('next-boot.js?38') }}
 {%- if theme.bookmark.enable %}
   {{- next_js('bookmark.js') }}
 {%- endif %}

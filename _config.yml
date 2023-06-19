@@ -121,6 +121,7 @@ menu:
   机器学习: /ml/ || fa fa-hand-sparkles
   敏捷: /agile/ || fa fa-skiing
   技术: /tech/ || fa fa-quidditch
+  架构: /arch/ || fa fa-warehouse
   其他: /other/ || fa fa-wave-square
   about: /about/ || fa fa-user
   RSS: /atom.xml || fa fa-rss

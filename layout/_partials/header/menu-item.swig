@@ -22,6 +22,7 @@
         机器学习: site.mlPosts.length,
         敏捷: site.agilePosts.length,
         技术: site.techPosts.length,
+        架构: site.archPosts.length,
         其他: site.otherPosts.length
         }
       %}

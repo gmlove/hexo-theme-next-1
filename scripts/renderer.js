@@ -56,8 +56,12 @@ hexo.locals.set('techPosts', () => {
   return hexo.locals.get('posts').filter(post => post.categories.filter(category => category.name === '技术').length > 0);
 });
 
+hexo.locals.set('archPosts', () => {
+  return hexo.locals.get('posts').filter(post => post.categories.filter(category => category.name === '架构').length > 0);
+});
+
 hexo.locals.set('otherPosts', () => {
-  return hexo.locals.get('posts').filter(post => post.categories.filter(category => ['数据', '敏捷', 'machine-learning', '技术'].indexOf(category.name) === -1).length > 0);
+  return hexo.locals.get('posts').filter(post => post.categories.filter(category => ['数据', '敏捷', 'machine-learning', '技术', '架构'].indexOf(category.name) !== -1).length === 0);
 });
 
 
@@ -86,5 +90,6 @@ hexo.extend.generator.register('data', dataGenerator('data'));
 hexo.extend.generator.register('agile', dataGenerator('agile'));
 hexo.extend.generator.register('ml', dataGenerator('ml'));
 hexo.extend.generator.register('tech', dataGenerator('tech'));
+hexo.extend.generator.register('arch', dataGenerator('arch'));
 hexo.extend.generator.register('other', dataGenerator('other'));
 
