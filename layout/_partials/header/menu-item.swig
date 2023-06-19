@@ -17,7 +17,12 @@
       {%- set badges = {
         archives  : site.posts.length,
         categories: site.categories.length,
-        tags      : site.tags.length
+        tags      : site.tags.length,
+        数据: site.dataPosts.length,
+        机器学习: site.mlPosts.length,
+        敏捷: site.agilePosts.length,
+        技术: site.techPosts.length,
+        其他: site.otherPosts.length
         }
       %}
       {%- for menu, count in badges %}

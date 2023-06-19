@@ -117,11 +117,16 @@ darkmode: false
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  categories: /categories/ || fa fa-th
-  archives: /archives/ || fa fa-archive
-  tags: /tags/ || fa fa-tags
+  数据: /data/ || fa fa-table
+  机器学习: /ml/ || fa fa-hand-sparkles
+  敏捷: /agile/ || fa fa-skiing
+  技术: /tech/ || fa fa-quidditch
+  其他: /other/ || fa fa-wave-square
   about: /about/ || fa fa-user
   RSS: /atom.xml || fa fa-rss
+  archives: /archives/ || fa fa-archive
+  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
