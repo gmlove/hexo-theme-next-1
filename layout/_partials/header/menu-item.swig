@@ -21,8 +21,8 @@
         数据: site.dataPosts.length,
         机器学习: site.mlPosts.length,
         敏捷: site.agilePosts.length,
-        技术: site.techPosts.length,
-        架构: site.archPosts.length,
+        技术与架构: site.arch_techPosts.length,
+        每日一思: site.daily_thoughtPosts.length,
         其他: site.otherPosts.length
         }
       %}

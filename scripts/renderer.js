@@ -52,12 +52,13 @@ hexo.locals.set('agilePosts', () => {
   return hexo.locals.get('posts').filter(post => post.categories.filter(category => category.name === '敏捷').length > 0);
 });
 
-hexo.locals.set('techPosts', () => {
-  return hexo.locals.get('posts').filter(post => post.categories.filter(category => category.name === '技术').length > 0);
+hexo.locals.set('arch_techPosts', () => {
+  return hexo.locals.get('posts')
+    .filter(post => post.categories.filter(category => category.name === '技术' || category.name === '架构').length > 0);
 });
 
-hexo.locals.set('archPosts', () => {
-  return hexo.locals.get('posts').filter(post => post.categories.filter(category => category.name === '架构').length > 0);
+hexo.locals.set('daily_thoughtPosts', () => {
+  return hexo.locals.get('posts').filter(post => post.categories.filter(category => category.name === '每日一思').length > 0);
 });
 
 hexo.locals.set('otherPosts', () => {
@@ -89,7 +90,7 @@ const dataGenerator = function(categoryId) {
 hexo.extend.generator.register('data', dataGenerator('data'));
 hexo.extend.generator.register('agile', dataGenerator('agile'));
 hexo.extend.generator.register('ml', dataGenerator('ml'));
-hexo.extend.generator.register('tech', dataGenerator('tech'));
-hexo.extend.generator.register('arch', dataGenerator('arch'));
+hexo.extend.generator.register('arch_tech', dataGenerator('arch_tech'));
+hexo.extend.generator.register('daily_thought', dataGenerator('daily_thought'));
 hexo.extend.generator.register('other', dataGenerator('other'));
 
