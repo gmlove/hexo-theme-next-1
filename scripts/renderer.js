@@ -67,7 +67,8 @@ hexo.locals.set('daily_thoughtPosts', () => {
 });
 
 hexo.locals.set('otherPosts', () => {
-  return hexo.locals.get('posts').filter(post => post.categories.filter(category => ['数据', '敏捷', 'machine-learning', '技术', '架构'].indexOf(category.name) !== -1).length === 0);
+  return hexo.locals.get('posts').filter(post =>
+    post.categories.filter(category => ['数据', '敏捷', 'machine-learning', '技术', '架构', '每日一思'].indexOf(category.name) !== -1).length === 0);
 });
 
 
