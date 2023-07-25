@@ -58,7 +58,12 @@ hexo.locals.set('arch_techPosts', () => {
 });
 
 hexo.locals.set('daily_thoughtPosts', () => {
-  return hexo.locals.get('posts').filter(post => post.categories.filter(category => category.name === '每日一思').length > 0);
+  return hexo.locals.get('posts')
+    .filter(post =>
+      post.categories.filter(category => category.name === '每日一思').length > 0
+        && post.top !== 100  // remove the latest daily thought
+    )
+    .sort('date', -1);
 });
 
 hexo.locals.set('otherPosts', () => {
